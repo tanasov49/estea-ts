@@ -9,10 +9,18 @@
         max-width: 900px;
         box-sizing: border-box;
     }
+
 }
 .aside-header-link {
     background: $colorYellow;
     padding: 59px 64px;
     max-width: 900px;
     box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    &__text {
+        @include subtitle-blocs;
+        color: $textBlack;
+    }
 }
