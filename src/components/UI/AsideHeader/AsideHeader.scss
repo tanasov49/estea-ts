@@ -1,0 +1,18 @@
+.aside-header {
+    background: $colorBrown;
+    &__title {
+        @include title-blocks;
+        background: $colorGreen;
+        color: $textWhite;
+        padding: 87px 67px;
+        margin: 0;
+        max-width: 900px;
+        box-sizing: border-box;
+    }
+}
+.aside-header-link {
+    background: $colorYellow;
+    padding: 59px 64px;
+    max-width: 900px;
+    box-sizing: border-box;
+}

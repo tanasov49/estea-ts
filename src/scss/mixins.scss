@@ -1,0 +1,23 @@
+@mixin font400 {
+    font-family: "Roboto";
+    font-weight: 400;
+}
+@mixin font500 {
+    font-family: "Roboto";
+    font-weight: 500;
+}
+@mixin font700 {
+    font-family: "Roboto";
+    font-weight: 700;
+}
+@mixin header__title {
+    @include font400;
+    color: $textWhite;
+    font-size: 72px;
+    line-height: 86px;
+}
+@mixin title-blocks {
+    @include font400;
+    font-size: 34px;
+    line-height: 42px;
+}

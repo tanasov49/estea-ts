@@ -1,0 +1,17 @@
+.header {
+    position: relative;
+    display: flex;
+    &__title {
+        @include header__title;
+        position: absolute;
+        bottom: 40px;
+        left: 64px;
+        margin: 0;
+    }
+    &__image {
+        width: 100%;
+        max-width: 1200px;
+        height: auto;
+        max-height: 640px;
+    }
+}

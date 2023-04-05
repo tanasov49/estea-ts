@@ -1,0 +1,42 @@
+.button-link {
+    background: transparent;
+    border: none;
+    outline: none;
+    padding: 0;
+    margin: 0;
+    position: relative;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    svg {
+        circle {
+            transition: stroke-dashoffset .7s ease;
+            stroke-dasharray: 95;
+            stroke-dashoffset: 95;
+            stroke: $colorLinkHover;
+            stroke-width: 2;
+        }
+        path {
+            transition: fill .7s ease;
+        }
+    }
+    &:hover {
+        svg {
+            circle {
+                stroke-dashoffset: 0;
+            }
+            path {
+                fill: $colorLinkHover;
+            }
+        }
+    }
+}
+@keyframes rotation {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(359deg);
+    }
+}

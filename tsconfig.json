@@ -11,16 +11,17 @@
     "esModuleInterop": true,
     "allowSyntheticDefaultImports": true,
     "strict": true,
+    "typeRoots": ["./src/@types", "./node_modules/@types"],
     "forceConsistentCasingInFileNames": true,
     "noFallthroughCasesInSwitch": true,
+    "noImplicitAny": false,
     "module": "esnext",
     "moduleResolution": "node",
     "resolveJsonModule": true,
     "isolatedModules": true,
     "noEmit": true,
-    "jsx": "react-jsx"
+    "jsx": "react-jsx",
   },
-  "include": [
-    "src"
-  ]
+  "exclude": ["node_modules", "**/*.spec.tsx", "**/*.test.tsx"],
+  "include": ["src", "custom.d.ts"] 
 }
