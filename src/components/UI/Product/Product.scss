@@ -1,0 +1,23 @@
+.product {
+    display: flex;
+    &__image {
+        max-width: 100%;   
+        height: auto;
+        object-fit: cover;
+    }
+    div {
+        background: $colorBrown;
+        display: flex;
+        padding: 88px 64px 78px;
+    }
+}
+.product-item {
+    border-collapse: collapse;
+    &__row {
+        border-bottom: 1px solid $textBlack;
+    }
+    &__text {
+        @include textProduct;
+        color: $textBlack;
+    }
+}

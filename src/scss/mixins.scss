@@ -51,3 +51,8 @@
     font-size: 20px;
     line-height: 25px;
 }
+@mixin textProduct {
+    @include font400;
+    font-size: 16px;
+    line-height: 16px;
+}
