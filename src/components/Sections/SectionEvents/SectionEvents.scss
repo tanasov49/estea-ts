@@ -42,6 +42,16 @@
     &__link {
         grid-column: 3 / 4;
         grid-row: 2 ;
+        overflow: hidden;
+        width: 50px;
+            svg {
+                fill: #000000;
+                transition: all 0.7s;
+            }
+            &:hover svg {
+                transform: translateX(-60%);
+                fill: $colorGreen;
+            }
     }
     &__place {
         @include subtitle16px;

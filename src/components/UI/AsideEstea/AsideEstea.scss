@@ -1,0 +1,18 @@
+.aside-estea {
+    background: $colorWhite;
+    padding: 107px 277px 105px 64px;
+    &__subtitle {
+        @include subtitleText;
+        color: $textBlack;
+        margin: 0;
+    }
+    &__title {
+        @include title-section;
+        color: $textBlack;
+        margin: 8px 0 0 0;
+    }
+    &__text {
+        @include title-blocks;
+        margin: 71px 0 0 0;
+    }
+}

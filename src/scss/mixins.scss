@@ -46,3 +46,8 @@
     font-size: 48px;
     line-height: 67px;
 }
+@mixin subtitleText {
+    @include font400;
+    font-size: 20px;
+    line-height: 25px;
+}

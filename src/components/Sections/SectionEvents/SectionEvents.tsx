@@ -1,7 +1,7 @@
 import React from 'react';
 import './SectionEvents.scss'
 import { events } from '../../../data/data';
-import FrameSvg from '../../../images/svg/frame.svg';
+import FrameSvg from '../../../images/svg/frame-animate.svg';
 function SectionEvents() {
     return (
         <section className='section-events'>
