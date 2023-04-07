@@ -1,0 +1,25 @@
+.article-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    &__title {
+        @include title-blocks;
+        margin: 0;
+        box-sizing: border-box;
+        padding: 87px 64px;
+    }
+}
+.article-text-link {
+    background: $colorYellow;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 64px;
+    box-sizing: border-box;
+    &__text {
+        @include subtitle-blocs;
+        color: $textBlack;
+        margin: 0;
+    }
+}

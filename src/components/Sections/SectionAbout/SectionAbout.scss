@@ -1,0 +1,13 @@
+.section-about {
+
+}
+.section-about-text {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    height: 884px;
+    &__image {
+        max-width: 100%;
+        height: auto;
+    }
+}

@@ -3,6 +3,7 @@ import './Main.scss';
 import SectionEvents from '../../Sections/SectionEvents/SectionEvents';
 import SectionEsteas from '../../Sections/SectionEsteas/SectionEsteas';
 import AsideEstea from '../../UI/AsideEstea/AsideEstea';
+import SectionProduct from '../../Sections/SectionProduct/SectionProduct';
 import SectionAbout from '../../Sections/SectionAbout/SectionAbout';
 
 function Main() {
@@ -11,6 +12,7 @@ function Main() {
             <SectionEvents />
             <SectionEsteas />
             <AsideEstea />
+            <SectionProduct />
             <SectionAbout />
         </main>
     );

@@ -1,0 +1,85 @@
+.aside-form {
+    display: flex;
+    background: $colorGreen;
+    justify-content: center;
+    gap: 40px;
+    padding: 144px 157px;
+}
+.aside-form-text {
+    max-width: 340px;
+    &__title {
+        @include title-section;
+        color: $textWhite;
+        margin: 0;
+    }
+    &__subtitle {
+        @include subtitle20px;
+        color: $textWhite;
+        margin: 17px 0 0 0;
+    }
+}
+.form-info {
+    width: 474px;
+    display: flex;
+    flex-direction: column;
+    &__input {
+        @include subtitle16px;
+        box-sizing: border-box;
+        width: 100%;
+        padding: 0;
+        background: transparent;
+        border: none;
+        outline: none;
+        border-bottom: 1px solid $colorWhite;
+        padding: 5px 20px;
+        color: $textWhite;
+    }
+    &__error {
+        @include subtitle16px;
+        height: 25px;
+        display: block;
+        color: $textRed;
+    }
+    &__submit {
+        background: transparent;
+        border: none;
+        outline: none;
+        width: 50px;
+        height: 50px;
+        display: flex;
+        align-items: center;
+        padding: 0;
+        margin: 0;
+        align-self: end;
+        svg {
+            circle {
+                transition: stroke-dashoffset .7s ease;
+                stroke-dasharray: 95;
+                stroke-dashoffset: 95;
+                stroke: $colorLinkHover;
+                stroke-width: 2;
+            }
+            path {
+                transition: fill .7s ease;
+            }
+        }
+        &_disabled {
+            svg {
+                fill: $colorGrey;
+            }
+        }
+        &_enabled {
+            cursor: pointer;
+            &:hover {
+                svg {
+                    circle {
+                        stroke-dashoffset: 0;
+                    }
+                    path {
+                        fill: $colorLinkHover;
+                    }
+                }
+            }
+        }
+    }
+}

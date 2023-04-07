@@ -18,3 +18,7 @@ export interface IProduct {
     payback: string,
     date: string
 }
+export interface ILinkAbout {
+    title: string
+    link: string,
+}

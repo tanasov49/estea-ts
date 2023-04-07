@@ -1,0 +1,39 @@
+.links-block {
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+    display: flex;
+}
+.link-block {
+    width: 100%;
+    padding: 48px 51px 44px 64px;
+    max-height: 488px;
+    box-sizing: border-box;
+    &:nth-child(1) {
+        background: $colorGrey;
+    }
+    &:nth-child(2) {
+        background: $colorYellow;
+    }
+    &:nth-child(3) {
+        background: $colorGreen;
+    }
+    &__link {
+        width: 45px;
+        display: block;
+        overflow: hidden;
+        svg {
+            transition: all 0.5s;
+            fill: $textBlack;
+        }
+        &:hover svg {
+            transform: translateX(-60%);
+            fill: $colorLinkHover;
+        }
+    }
+    &__title {
+        @include title-blocks;
+        padding: 163px 0 0 0;
+        margin: 0;
+    }
+}
