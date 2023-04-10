@@ -3,10 +3,16 @@
     margin: 0;
     list-style-type: none;
     display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 .link-block {
-    width: 100%;
+    max-width: 100%;
+    width: 400px;
     padding: 48px 51px 44px 64px;
+    @media screen and (max-width: 768px) {
+        padding: 20px;
+    }
     max-height: 488px;
     box-sizing: border-box;
     &:nth-child(1) {
@@ -35,5 +41,8 @@
         @include title-blocks;
         padding: 163px 0 0 0;
         margin: 0;
+        @media screen and (max-width: 768px) {
+            padding: 40px 0 0 0;
+        }
     }
 }

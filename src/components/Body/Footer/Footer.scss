@@ -1,0 +1,13 @@
+.footer {
+    background: $colorGreen;
+    display: flex;
+    flex-direction: column;
+    
+    &__description {
+        @include subtitle16px;
+        margin: 46px 0 0 0;
+        max-width: 340px;
+        color: $textWhite;
+        align-self: center;
+    }
+}

@@ -1,9 +1,13 @@
 .aside-form {
     display: flex;
+    flex-wrap: wrap;
     background: $colorGreen;
     justify-content: center;
     gap: 40px;
     padding: 144px 157px;
+    @media screen and (max-width: 768px) {
+        padding: 50px;
+    }
 }
 .aside-form-text {
     max-width: 340px;
@@ -25,13 +29,13 @@
     &__input {
         @include subtitle16px;
         box-sizing: border-box;
-        width: 100%;
+        min-width: 100%;
         padding: 0;
         background: transparent;
         border: none;
         outline: none;
         border-bottom: 1px solid $colorWhite;
-        padding: 5px 20px;
+        padding: 5px 20px 10px;
         color: $textWhite;
     }
     &__error {

@@ -47,19 +47,18 @@ export const ModalSate = ({children}: {children: React.ReactNode}) => {
         if (name === 'name') {
             if(!value) {
                 isErrors.name = 'Name is required';
-                validName = false
+                validName = false;
             } else {
                 validName = regesName.test(value)
                 isErrors.name = validName ? '' : 'Only text name or minimum 2 length'
             }
         }
         if (name === 'tel') {
-            
             if(!value) {
                 validTel = false;
                 isErrors.tel = 'Phone is required';
             } else {
-                validTel = regesPhone.test(value)
+                validTel = regesPhone.test(value);
                 isErrors.tel = validTel ? '' : 'Phone must be numbers and 11 length';
             }
         }
@@ -83,12 +82,25 @@ export const ModalSate = ({children}: {children: React.ReactNode}) => {
     const handleChange = (e: React.ChangeEvent<HTMLTextAreaElement | HTMLInputElement>) => {
         const { name, value } = e.target;
         handleValidate(name, value);
-        setValues({
-            ...values,
-            [name]: value,
-            ['tel']: value.replace(/\D/g, "")
-            
-        })
+        if (name === 'tel') {
+            setValues({
+                ...values,
+                [name]: value,
+                [name]: value.replace(/\D/g, "")
+            })
+        }
+        if (name === 'email') {
+            setValues({
+                ...values,
+                [name]: value,
+            })
+        }
+        if (name === 'name') {
+            setValues({
+                ...values,
+                [name]: value,
+            })
+        }
     }
     const hanldeSubmitForm = (e: React.SyntheticEvent<EventTarget>) => {
         e.preventDefault();

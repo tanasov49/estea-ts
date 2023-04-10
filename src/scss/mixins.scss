@@ -15,16 +15,29 @@
     color: $textWhite;
     font-size: 72px;
     line-height: 86px;
+    @media screen and (max-width: 768px) {
+        font-size: 36px;
+        line-height: 38px;
+        text-align: center;
+    }
 }
 @mixin title-blocks {
     @include font400;
     font-size: 34px;
     line-height: 42px;
+    @media screen and (max-width: 768px) {
+        font-size: 24px;
+        line-height: 26px; 
+    }
 }
 @mixin subtitle-blocs {
     @include font400;
     font-size: 28px;
     line-height: 39px;
+    @media screen and (max-width: 768px) {
+        font-size: 22px;
+        line-height: 26px;
+    }
 }
 @mixin title24px {
     @include font400;
@@ -45,11 +58,19 @@
     @include font400;
     font-size: 48px;
     line-height: 67px;
+    @media screen and (max-width: 768px) {
+        font-size: 28px;
+        line-height: 30px;
+    }
 }
 @mixin subtitleText {
     @include font400;
     font-size: 20px;
     line-height: 25px;
+    @media screen and (max-width: 768px) {
+        font-size: 18px;
+        line-height: 20px;
+    }
 }
 @mixin textProduct {
     @include font400;

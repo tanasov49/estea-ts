@@ -2,6 +2,10 @@
     background: $colorCream;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
+    @media screen and (max-width: 768px) {
+        display: flex;
+        flex-direction: column;
+    }
 }
 .image-estea {
     position: relative;
@@ -11,6 +15,9 @@
     &__image {
         height: auto;
         width: 100%;
+        @media screen and (max-width: 768px) {
+            display: none;
+        }
     }
     &__subtitle {
         @include subtitle20px;
@@ -23,6 +30,10 @@
         padding: 31px 85px 33px 64px;
         background: $colorBrown;
         box-sizing: border-box;
+        @media screen and (max-width: 768px) {
+            position: sticky;
+            padding: 30px;
+        }
     }
 }
 .description-estea {
